@@ -1,60 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
 
-/***
- * <div id="parent">
- * <div id="child1">
- *       <h1>I m an h1 tag</h1>
- *       <h2>I m an h2 tag</h2>  
- *    </div>
- *    <div id="child">
- *       <h1>I m an h1 tag</h1>
- *       <h2>I m an h2 tag</h2>  
- *    </div>
- * 
- * </div
- * 
- */
+    //JSX (Transpiled before it reaches the JS engine) - PARSEL -Babel
+    //JSX=> Babel transpiles it to React.createElement=>ReactElement=>js Object=>HTM Element(render) 
 
-const parent=React.createElement(
-    "div",
-    {id:"parent"},
-    [    React.createElement("div",{id:"child1",key:"child1"},[
-        React.createElement("h1",{id:"heading1",key:"heading1"},"I am an h1 tag"),
-        React.createElement("h2",{id:"heading2",key:"heading2"},"I am an h2 tag" )
-    ]
-    ),
-        React.createElement("div",{id:"child2",key:"child2"},[
-        React.createElement("h1",{id:"heading3",key:"heading3"},"I am an h1 tag"),
-        React.createElement("h2",{id:"heading4",key:"heading4"},"I am an h2 tag" )
-    ]
+    //React Element
+    const heading=( 
+        <h1 className='head'>React using JSX</h1>
     )
-]
-)
+    const Title=()=>(
+        <h1 className='head'>React  -Functional Components</h1>
+        
+    )     
+    
+    const HeadingComponent=()=>(
+        <div className='container'>  
+         {heading}   
+        <Title />
+        <Title> </Title>       
+        {Title()}
+        <h1 className="heading"> React Functional  Component </h1> 
+        </div>
+         
+        )
+    
 
-const root=ReactDOM.createRoot(document.getElementById("root"))
-root.render(parent);
-
-// const heading=React.createElement('h1',{id:"heading"},"hello world from react");
-
-// const root=ReactDOM.createRoot(document.getElementById("root"));
-
-// root.render(heading);
-
-
-//         const parent=React.createElement(
-//             "div",
-//             {id:"parent"},[
-//             React.createElement("div", {id:"child"},[
-//                     React.createElement("h1",{},"I m an h1 tag"),
-//                     React.createElement("h2",{},"I m an h2 tag")
-//             ]),
-//             React.createElement("div", {id:"child2"},[
-//                     React.createElement("h1",{},"I m an h1 tag"),
-//                     React.createElement("h2",{},"I m an h2 tag")
-//             ])   
-//         ]
-//     )
-//         // const heading=React.createElement("h1",{id:"heading",xyz:"abc"},"Hello world from react");
-//         const root=ReactDOM.createRoot(document.getElementById("root"));
-//         root.render(parent);
+    const root=ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<HeadingComponent/>);
