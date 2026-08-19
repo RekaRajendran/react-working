@@ -1,0 +1,49 @@
+[
+  {
+    "type": "restaurant",
+    "data": {
+      "type": "F",
+      "id": "334475",
+      "name": "KFC",
+      "city": "1",
+      "area": "BTM Layout",
+      "cuisines": [
+        "Burgers",
+        "Biryani",
+        "American",
+        "Snacks",
+        "Fast Food"
+      ],
+      "costForTwo": 40000,
+      "costForTwoString": "₹400 FOR TWO",
+      "deliveryTime": 36,
+      "avgRating": "3.8",
+      "totalRatings": 500
+    },
+    "subtype": "basic"
+  },
+  {
+    "type": "restaurant",
+    "data": {
+      "type": "F",
+      "id": "229",
+      "name": "Meghana Foods",
+      "city": "1",
+      "area": "Koramangala",
+      "cuisines": [
+        "Biryani",
+        "Andhra",
+        "South Indian",
+        "North Indian",
+        "Chinese",
+        "Seafood"
+      ],
+      "costForTwo": 50000,
+      "costForTwoString": "₹500 FOR TWO",
+      "deliveryTime": 29,
+      "avgRating": "4.4",
+      "totalRatings": 1000
+    },
+    "subtype": "basic"
+  }
+]
